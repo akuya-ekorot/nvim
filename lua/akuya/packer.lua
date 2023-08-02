@@ -24,6 +24,8 @@ return require('packer').startup(function(use)
 
 		use("nvim-treesitter/nvim-treesitter-context");
 
+		use { "mhartington/formatter.nvim" };
+
 		use {
 			'VonHeikemen/lsp-zero.nvim',
 			branch = 'v1.x',
