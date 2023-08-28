@@ -9,5 +9,6 @@ require("formatter").setup {
 		typescriptreact = { require("formatter.filetypes.typescriptreact").prettier },
 		php = { require("formatter.filetypes.php").php },
 		sql = { require("formatter.filetypes.sql").pgformat },
+		vue = { require("formatter.filetypes.vue").prettier },
 	}
 }
