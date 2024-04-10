@@ -1,1 +1,3 @@
-return { "rose-pine/neovim" }
+return {
+  "rose-pine/neovim",
+}
