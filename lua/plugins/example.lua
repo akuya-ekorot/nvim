@@ -28,7 +28,7 @@ return {
   },
 
   -- disable trouble
-  { "folke/trouble.nvim",      enabled = false },
+  { "folke/trouble.nvim", enabled = false },
 
   -- add symbols-outline
   {
@@ -77,6 +77,14 @@ return {
     dependencies = {
       "nvim-telescope/telescope-fzf-native.nvim",
       build = "make",
+      extensions = {
+        fzf = {
+          fuzzy = true,
+          override_generic_sorter = true,
+          override_file_sorter = true,
+          case_mode = "smart_case",
+        },
+      },
       config = function()
         require("telescope").load_extension("fzf")
       end,
@@ -141,6 +149,7 @@ return {
     opts = {
       ensure_installed = {
         "bash",
+        "graphql",
         "html",
         "javascript",
         "json",
