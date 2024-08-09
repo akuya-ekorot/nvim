@@ -6,4 +6,4 @@
 vim.opt.scrolloff = 16
 
 -- light mode
-vim.opt.background = "light"
+vim.opt.background = "dark"
