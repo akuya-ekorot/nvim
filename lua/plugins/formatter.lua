@@ -2,23 +2,33 @@ return {
   "stevearc/conform.nvim",
   optional = true,
   opts = {
+    injected = {
+      options = {
+        lang_to_ext = {
+          sql = 'sql'
+        },
+        lang_to_formatters = {
+          sql = 'sqlfluff'
+        }
+      }
+    },
     formatters_by_ft = {
-      ["javascript"] = { "biome" },
-      ["javascriptreact"] = { "biome" },
-      ["typescript"] = { "biome" },
-      ["typescriptreact"] = { "biome" },
-      ["vue"] = { "biome" },
-      ["css"] = { "biome" },
-      ["scss"] = { "biome" },
-      ["less"] = { "biome" },
-      ["html"] = { "biome" },
-      ["json"] = { "biome" },
-      ["jsonc"] = { "biome" },
-      ["yaml"] = { "biome" },
-      ["markdown"] = { "biome" },
-      ["markdown.mdx"] = { "biome" },
-      ["graphql"] = { "biome" },
-      ["handlebars"] = { "biome" },
+      ["javascript"] = { "prettier" },
+      ["javascriptreact"] = { "prettier" },
+      ["typescript"] = { "prettier" },
+      ["typescriptreact"] = { "prettier" },
+      ["vue"] = { "prettier" },
+      ["css"] = { "prettier" },
+      ["scss"] = { "prettier" },
+      ["less"] = { "prettier" },
+      ["html"] = { "prettier" },
+      ["json"] = { "prettier" },
+      ["jsonc"] = { "prettier" },
+      ["yaml"] = { "prettier" },
+      ["markdown"] = { "prettier" },
+      ["markdown.mdx"] = { "prettier" },
+      ["graphql"] = { "prettier" },
+      ["handlebars"] = { "prettier" },
     },
   },
 }

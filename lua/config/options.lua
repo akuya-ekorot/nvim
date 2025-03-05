@@ -4,6 +4,4 @@
 
 -- scroll options
 vim.opt.scrolloff = 16
-
-vim.o.background = 'light'
 vim.g.lazyvim_prettier_needs_config = true
